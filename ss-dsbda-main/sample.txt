@@ -1,0 +1,7 @@
+To create a histogram, we will use pandas hist() method. Calling the hist() method on a pandas dataframe will return histograms for all non-nuisance series in the dataframe. Most of the time, when visualizing data, you want to highlight specific variables. To do this using pandas histograms, you would need to utilize it’s parameters. Below are some of the most common pandas hist() parameters:
+
+column: the specific column(s) you want to create a histogram of
+by: the parameter on which to split your data; this produces multiple histograms displaying each group
+bins the number of buckets your data will be grouped by (the number of bars in your histogram); pandas automatically creates bins if not specified.
+
+There was a time when he would have embraced the change that was coming. In his youth, he sought adventure and the unknown, but that had been years ago. He wished he could go back and learn to find the excitement that came with change but it was useless. That curiosity had long left him to where he had come to loathe anything that put him out of his comfort zone.

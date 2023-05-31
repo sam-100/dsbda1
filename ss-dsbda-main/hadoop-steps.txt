@@ -1,0 +1,24 @@
+1. start-all.sh
+
+2. jps
+(if 6 daemons not running, then could be a problem, for namenode not running, use: hadoop namenode -format)
+
+3. hdfs dfs -mkdir /DSBDAL (makes directory named DSBDAL in HDFS)
+
+4. hdfs dfs -put <location of input file in local file system (test.txt)> /DSBDAL/ (put command copies the test.txt file from local file system to hadoop file system in the directory mentioned in this case, from hadoop folder to DSBDAL in hdfs)
+
+5. hdfs dfs -ls /DSBDAL/ (to list down the files in DSBDAL folder in hdfs)
+
+6. hdfs dfs -cat /DSBDAL/test.txt (to display the file)
+
+7. yarn jar <location of jar file> wordcount /DSBDAL/test.txt(location of input file in HDFS) /DSBDAL/DSBDAL_output(directory for output file) //jar file is usually located in hadoop-x.x.x/share/hadoop/mapreduce/
+
+8. hdfs dfs -ls /DSBDAL/DSBDAL_output (it will show the list of output files)
+
+9. hdfs dfs -cat <path of output file> (show the output file)
+
+10. to access Hadoop File System UI, go to localhost:9870/
+
+11. to copy file to local file system, go to the directory where you want the file and then type the command: hadoop fs -get /DSBDAL/DSBDAL_output/<filename> (it will get copied)
+
+12. stop-all.sh
